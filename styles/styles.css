@@ -324,6 +324,71 @@ a {
   width: 85%;
 }
 
+.site .form__section {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 3rem;
+}
+
+.site .form__section form {
+  padding: 3rem 10rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 2rem;
+}
+
+.site .form__section form input,
+.site .form__section form textarea {
+  margin: 2rem;
+  padding: 0.4rem;
+}
+
+.site .form__section form input:focus,
+.site .form__section form textarea:focus {
+  outline: 2px solid black;
+}
+
+.site .form__section form textarea {
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+}
+
+.site .form__section form button {
+  width: 100%;
+  padding: 2rem;
+  background-color: #154353;
+  color: white;
+}
+
+.site .form__section form button:focus {
+  background: #388d89;
+}
+
 @media screen and (max-width: 1331px) {
   html {
     font-size: 45%;
