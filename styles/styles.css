@@ -189,4 +189,95 @@ a {
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
 }
+
+#plant-left {
+  -webkit-animation: plantMove 1.5s ease-in-out infinite alternate;
+          animation: plantMove 1.5s ease-in-out infinite alternate;
+}
+
+#plant-right {
+  -webkit-animation: plantMove 1.5s ease-in-out infinite alternate 0.5s;
+          animation: plantMove 1.5s ease-in-out infinite alternate 0.5s;
+}
+
+#me {
+  -webkit-animation: me 1s ease-in-out infinite alternate;
+          animation: me 1s ease-in-out infinite alternate;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#clock-arrow {
+  -webkit-animation: clock 5s linear infinite;
+          animation: clock 5s linear infinite;
+  transform-box: fill-box;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes plantMove {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+}
+
+@keyframes plantMove {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+}
+
+@-webkit-keyframes me {
+  0% {
+    -webkit-transform: rotatez(-3.5deg);
+            transform: rotatez(-3.5deg);
+  }
+  100% {
+    -webkit-transform: rotatez(3.5deg);
+            transform: rotatez(3.5deg);
+  }
+}
+
+@keyframes me {
+  0% {
+    -webkit-transform: rotatez(-3.5deg);
+            transform: rotatez(-3.5deg);
+  }
+  100% {
+    -webkit-transform: rotatez(3.5deg);
+            transform: rotatez(3.5deg);
+  }
+}
+
+@-webkit-keyframes clock {
+  0% {
+    -webkit-transform: rotatez(0deg);
+            transform: rotatez(0deg);
+  }
+  100% {
+    -webkit-transform: rotatez(360deg);
+            transform: rotatez(360deg);
+  }
+}
+
+@keyframes clock {
+  0% {
+    -webkit-transform: rotatez(0deg);
+            transform: rotatez(0deg);
+  }
+  100% {
+    -webkit-transform: rotatez(360deg);
+            transform: rotatez(360deg);
+  }
+}
 /*# sourceMappingURL=styles.css.map */

@@ -88,3 +88,50 @@
     }
   }
 }
+
+#plant-left {
+  animation: plantMove 1.5s ease-in-out infinite alternate;
+}
+
+#plant-right {
+  animation: plantMove 1.5s ease-in-out infinite alternate 0.5s;
+}
+
+#me {
+  animation: me 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#clock-arrow {
+  animation: clock 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+// Animations
+@keyframes plantMove {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+}
+
+@keyframes me {
+  0% {
+    transform: rotatez(-3.5deg);
+  }
+  100% {
+    transform: rotatez(3.5deg);
+  }
+}
+
+@keyframes clock {
+  0% {
+    transform: rotatez(0deg);
+  }
+  100% {
+    transform: rotatez(360deg);
+  }
+}
