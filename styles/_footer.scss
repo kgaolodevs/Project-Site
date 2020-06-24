@@ -1,0 +1,15 @@
+footer {
+  background-color: $background-color;
+  color: white;
+  min-height: 10vh;
+  padding: 0% 5%;
+  outline: 0.5rem crimson solid;
+  @include flexbox(space-between, center, row);
+
+  ul {
+    @include flexbox(flex-end, center, row);
+    img {
+      width: 50%;
+    }
+  }
+}
