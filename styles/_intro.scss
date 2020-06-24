@@ -21,6 +21,70 @@
         @include flexbox(space-around, center, row);
         flex: 1 1 40rem;
       }
+
+      .active {
+        background: $gray-text;
+        color: white;
+        padding: 1rem 3rem;
+        border-radius: 1.1rem;
+      }
+    }
+  }
+
+  .intro {
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    @include flexbox(space-between, center, row);
+
+    &__text {
+      h2 {
+        font-size: 8rem;
+        padding-top: 2rem;
+        background: $gradient;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        width: fit-content;
+      }
+
+      h3 {
+        font-size: 6rem;
+        padding: 2rem 0;
+      }
+
+      p {
+        padding-top: 2rem;
+        color: $gray-text;
+      }
+
+      .intro__socialLinks {
+        margin-top: 4rem;
+        a {
+          margin-right: 5rem;
+        }
+      }
+    }
+
+    &__image {
+      &--person {
+        width: 100%;
+        height: 100%;
+      }
+
+      &--splash {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        height: 100%;
+        transform: rotateZ();
+        z-index: -1;
+      }
+    }
+
+    &__text,
+    &__image {
+      flex: 1 1 40rem;
     }
   }
 }
