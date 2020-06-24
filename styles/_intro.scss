@@ -8,6 +8,19 @@
       min-height: 10vh;
       width: 60%;
       flex-wrap: wrap;
+
+      &__logo {
+        @include flexbox(flex-start, center, row);
+        flex: 1 1 10rem;
+        h1 {
+          margin: 2rem;
+        }
+      }
+
+      &__items {
+        @include flexbox(space-around, center, row);
+        flex: 1 1 40rem;
+      }
     }
   }
 }
