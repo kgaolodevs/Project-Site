@@ -1,3 +1,81 @@
 @import "helpers";
 @import "global";
 @import "intro";
+
+@media screen and (max-width: 1331px) {
+  html {
+    font-size: 45%;
+  }
+
+  .site {
+    .mainHead {
+      width: 100%;
+
+      .navigation {
+        width: 100%;
+      }
+    }
+
+    .intro {
+      @include flexbox(space-between, center, row);
+      &__image {
+        width: fit-content;
+        svg {
+          width: 70%;
+        }
+
+        &--splash {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 592px) {
+  html {
+    font-size: 40%;
+  }
+
+  .site {
+    .mainHead {
+      .navigation {
+        @include flexbox(center, center, column);
+
+        &__logo {
+          padding-top: 1rem;
+        }
+
+        &__items {
+          flex: 0;
+          padding: 5rem 0;
+          width: 100%;
+          li {
+          }
+        }
+      }
+    }
+
+    .intro {
+      &__image {
+        text-align: center;
+        margin-top: 10rem;
+      }
+
+      &__text {
+        h2 {
+          width: 100%;
+          text-align: center;
+        }
+        text-align: center;
+      }
+
+      &__socialLinks {
+        img {
+          width: 13%;
+        }
+        margin: 5rem 0 0 5rem;
+      }
+    }
+  }
+}
