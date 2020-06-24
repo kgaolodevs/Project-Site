@@ -286,6 +286,44 @@ a {
   }
 }
 
+.site .projects {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.site .projects__travely, .site .projects__elitePhotography {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  margin: 3rem 0;
+  padding: 2rem 0;
+}
+
+.site .projects__travely h2, .site .projects__elitePhotography h2 {
+  margin-bottom: 2rem;
+}
+
+.site .projects__travely img, .site .projects__elitePhotography img {
+  width: 85%;
+}
+
 @media screen and (max-width: 1331px) {
   html {
     font-size: 45%;

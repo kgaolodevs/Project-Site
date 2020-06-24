@@ -1,0 +1,24 @@
+.site {
+  .projects {
+    width: 90%;
+    margin: auto;
+    min-height: 90vh;
+    @include flexbox(space-between, center, row);
+    flex-wrap: wrap;
+    text-align: center;
+
+    &__travely,
+    &__elitePhotography {
+      flex: 1 1 40rem;
+      margin: 3rem 0;
+      padding: 2rem 0;
+      h2 {
+        margin-bottom: 2rem;
+      }
+
+      img {
+        width: 85%;
+      }
+    }
+  }
+}
