@@ -1,0 +1,13 @@
+.site {
+  .mainHead {
+    width: 95%;
+    margin: 0 0 0 auto;
+
+    .navigation {
+      @include flexbox(space-between, center, row);
+      min-height: 10vh;
+      width: 60%;
+      flex-wrap: wrap;
+    }
+  }
+}
