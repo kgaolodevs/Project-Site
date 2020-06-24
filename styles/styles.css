@@ -473,5 +473,9 @@ a {
   .site .intro__socialLinks img {
     width: 13%;
   }
+  .site form {
+    padding: 0;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
